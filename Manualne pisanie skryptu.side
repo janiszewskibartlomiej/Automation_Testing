@@ -2,7 +2,7 @@
   "id": "64974b65-2d74-4214-9df3-35e5b577847a",
   "version": "1.1",
   "name": "Manualne pisanie skryptu",
-  "url": "",
+  "url": "http://automationpractice.com/index.php",
   "tests": [{
     "id": "99b0a650-b472-49d8-a9e8-4520bbae742c",
     "name": "logowanie na automationpractice.com",
@@ -105,6 +105,108 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "2ef8ac4b-a9d3-4b21-9ac2-a9895a2a4b5c",
+    "name": "zadanie4 - formularz Contact us",
+    "commands": [{
+      "id": "03e59888-e361-4fb8-82e9-9920ab294ce0",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "366c80ef-c212-4d8f-bb9f-0635ed9e74f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact us",
+      "targets": [
+        ["linkText=Contact us", "linkText"],
+        ["css=a[title=\"Contact Us\"]", "css"],
+        ["css=#contact-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact us')]", "xpath:link"],
+        ["xpath=//div[@id='contact-link']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=contact']", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "157398e6-2bc5-4f4e-bd1d-6efadf26be9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=from", "name"],
+        ["css=#email", "css"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f8cf38f-8ad3-4168-88d1-d51d4204ba0e",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "gjdhsj@gmail.com"
+    }, {
+      "id": "aeed3051-985f-4fe6-a98f-cb7acb871d74",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_order",
+      "targets": [
+        ["id=id_order", "id"],
+        ["name=id_order", "name"],
+        ["css=#id_order", "css"],
+        ["css=#id_order", "css:finder"],
+        ["xpath=//input[@id='id_order']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123-56"
+    }, {
+      "id": "98b09dc7-7af4-4f0f-bd12-4370ccf8f1cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/form/fieldset/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test maila"
+    }, {
+      "id": "a503ddec-d93b-48b6-939e-e2be59ab567a",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitMessage",
+      "targets": [
+        ["css=#submitMessage > span", "css"],
+        ["css=#submitMessage > span", "css:finder"],
+        ["xpath=//button[@id='submitMessage']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bbe37e-fcb4-4dce-a6d3-5865e3a93522",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=ol > li",
+      "targets": [
+        ["css=ol > li", "css"],
+        ["css=ol > li", "css:finder"],
+        ["xpath=//div[@id='center_column']/div/ol/li", "xpath:idRelative"],
+        ["xpath=//ol/li", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "2bedbd91-f085-48c8-b272-ae3390d935a9",
@@ -114,6 +216,6 @@
     "timeout": 300,
     "tests": ["99b0a650-b472-49d8-a9e8-4520bbae742c"]
   }],
-  "urls": [],
+  "urls": ["http://automationpractice.com/index.php"],
   "plugins": []
 }
