@@ -1,0 +1,119 @@
+{
+  "id": "64974b65-2d74-4214-9df3-35e5b577847a",
+  "version": "1.1",
+  "name": "Manualne pisanie skryptu",
+  "url": "",
+  "tests": [{
+    "id": "99b0a650-b472-49d8-a9e8-4520bbae742c",
+    "name": "logowanie na automationpractice.com",
+    "commands": [{
+      "id": "ee15a889-ebb4-44c3-8034-1409fdb7c34d",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41b99a32-2732-4feb-ab2c-f78ebcbe944c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d318f73-5ebe-4d19-8c2d-6a92966206f6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html[1]/body[1]/div[1]/div[1]/header[1]/div[2]/div[1]/div[1]/nav[1]/div[1]/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08e94957-3ea1-4d8b-a65b-36b7720215b1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6227a599-2193-4012-b0b9-80f1666c8b91",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@title='Log in to your customer account']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4725f5b6-e63c-4349-b2bb-72e61290acb8",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb18c2aa-8821-4e2c-a394-511c838eb255",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "dshkshoris@gmail.com"
+    }, {
+      "id": "ed65615b-c688-4386-9ab2-f980e6162f16",
+      "comment": "",
+      "command": "click",
+      "target": "name=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa705659-3584-462a-b210-0f1c3a5bc583",
+      "comment": "",
+      "command": "type",
+      "target": "name=passwd",
+      "targets": [],
+      "value": "gkjghkjh"
+    }, {
+      "id": "8f0b9ee0-de9f-45f9-8163-fb96c33a1f5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css"],
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b831219-2acf-4c05-af5e-61d58f6fa6d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact us",
+      "targets": [
+        ["linkText=Contact us", "linkText"],
+        ["css=a[title=\"Contact Us\"]", "css"],
+        ["css=#contact-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact us')]", "xpath:link"],
+        ["xpath=//div[@id='contact-link']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=contact']", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2bedbd91-f085-48c8-b272-ae3390d935a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["99b0a650-b472-49d8-a9e8-4520bbae742c"]
+  }],
+  "urls": [],
+  "plugins": []
+}
