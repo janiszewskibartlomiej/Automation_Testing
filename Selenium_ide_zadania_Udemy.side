@@ -1,0 +1,440 @@
+{
+  "id": "82b7f643-04a4-4ffa-adda-529e34a9d22f",
+  "version": "1.1",
+  "name": "Udemy nauka",
+  "url": "https://katalon-demo-cura.herokuapp.com/",
+  "tests": [{
+    "id": "77b91a90-a1fe-4453-a34a-dc747daa5ea7",
+    "name": "zadanie1",
+    "commands": [{
+      "id": "4e36fb59-c5ae-40a5-88aa-f0298f8f5b22",
+      "comment": "",
+      "command": "open",
+      "target": "https://katalon-demo-cura.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d8b5a4c-9c7e-48fb-8f1e-9c1b097d50d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7502f1a2-d13c-4611-bb6e-a1cb2ecc05a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-10",
+      "targets": [
+        ["css=.col-lg-10", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13074588-bc7b-4e23-a93b-1dd43e26fa3c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css"],
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Atlanta 550 Pharr Road NE Suite 525\\nAtlanta, GA 30305"
+    }, {
+      "id": "a6c3a018-06ab-4812-a60f-8129665f878f",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f5d2a64-ef3a-4c90-a152-8981bbd0242a",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f716c212-de78-416d-b92b-9247c74765db",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css"],
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5df2aa2d-5dc6-44ec-a29a-da4a369d9a27",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "981a3f49-7bd3-429f-a021-6bb24157dc81",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5e70901-db46-4f49-9cb5-c5698c695218",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "970ceae2-5947-435d-a942-5b6779f49474",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77e0efe3-b833-4c31-91af-42054c2f71c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dacc407-58dd-41f4-8f63-7aa321119743",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f536872b-5ef9-41b8-ab91-4b278e38a344",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba853bc7-2159-478a-9876-c26370881390",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1be6cbc-c09e-420e-aa44-b0278fb619c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "308a1153-ff8f-4fa6-b7b1-64348cc8d195",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d28405dc-2e79-4b49-bad0-0e570b1cdf6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61896a76-e4cf-4bdf-8107-d164acd2fb07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-10",
+      "targets": [
+        ["css=.col-lg-10", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3f4e01c-87ac-4e0d-b75b-cbce288a103e",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": "414,7"
+    }, {
+      "id": "9b5231de-7c2f-4c2c-8132-ef126462edf0",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": "434,8"
+    }, {
+      "id": "ec347cce-63bc-4648-a9b4-4d006ffa5c23",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": "434,8"
+    }, {
+      "id": "a33e54b1-5f49-4e3b-892a-59d54f5bc5b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22bb5b83-dda7-406f-90b3-aff0599d4d26",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": "12.953125,5"
+    }, {
+      "id": "ba778e66-c4cb-4f29-a7d2-c1c14eb137ec",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": "12.953125,5"
+    }, {
+      "id": "1b776fbc-c687-4e96-b795-e5dd474e0887",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": "12.953125,5"
+    }, {
+      "id": "ab889e79-09a7-48bc-a823-efd3a5ffc416",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bdf0583-11ba-48c3-9c67-66abd69662d1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": "678 813 154"
+    }, {
+      "id": "11d4425b-25ba-4e72-aae3-f8f9682f9f1a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=info@katalon.com",
+      "targets": [
+        ["linkText=info@katalon.com", "linkText"],
+        ["css=li > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'info@katalon.com')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mailto:info@katalon.com')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "info@katalon.com"
+    }, {
+      "id": "aa2d63cb-7a9e-48c8-86db-ad997ce8c976",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-10",
+      "targets": [
+        ["css=.col-lg-10", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54ac8975-e41d-4b36-a772-2bdd5adf1f74",
+      "comment": "",
+      "command": "click",
+      "target": "css=p.text-muted",
+      "targets": [
+        ["css=p.text-muted", "css"],
+        ["css=.text-muted", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "455165c6-55d8-48aa-8812-60ddf0adddba",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p.text-muted",
+      "targets": [
+        ["css=p.text-muted", "css"],
+        ["css=.text-muted", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Copyright © CURA Healthcare Service 2018"
+    }, {
+      "id": "bfdbc927-700f-4644-aa44-2233e94a4c07",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul.list-unstyled > li",
+      "targets": [
+        ["css=ul.list-unstyled > li", "css"],
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a850d22d-c32d-4a17-8911-cee1470f8012",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02ebe192-4aa6-45c0-9fad-357f2defe562",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85441616-cc78-406e-8482-1973c4d2e149",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-envelope-o",
+      "targets": [
+        ["css=.fa-envelope-o", "css:finder"],
+        ["xpath=//li[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c73e9de-999c-4cdd-99a0-f8516500f314",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-facebook",
+      "targets": [
+        ["css=.fa-facebook", "css:finder"],
+        ["xpath=//li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1982472e-61e5-459b-b319-5fd9f31b63e1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-twitter",
+      "targets": [
+        ["css=.fa-twitter", "css:finder"],
+        ["xpath=//li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bf6f506-922f-4e91-bfd2-fbc32099b7de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-10",
+      "targets": [
+        ["css=.col-lg-10", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aac30eab-c806-447a-958f-ff6e70d70f27",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-dribbble",
+      "targets": [
+        ["css=.fa-dribbble", "css:finder"],
+        ["xpath=//li[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1a4e0d70-479c-45a7-9e99-30999c16bf97",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["77b91a90-a1fe-4453-a34a-dc747daa5ea7"]
+  }],
+  "urls": ["https://katalon-demo-cura.herokuapp.com/"],
+  "plugins": []
+}
