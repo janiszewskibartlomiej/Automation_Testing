@@ -2,7 +2,7 @@
   "id": "64974b65-2d74-4214-9df3-35e5b577847a",
   "version": "1.1",
   "name": "Manualne pisanie skryptu",
-  "url": "http://automationpractice.com/index.php",
+  "url": "http://automationpractice.com",
   "tests": [{
     "id": "99b0a650-b472-49d8-a9e8-4520bbae742c",
     "name": "logowanie na automationpractice.com",
@@ -207,6 +207,182 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "a4564e9b-511e-4f2c-b871-8cefa190b0ac",
+    "name": "zadanie5 - znajdź XPath",
+    "commands": [{
+      "id": "0f10dac4-68a6-4260-b9fd-c7c468e90869",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php?controller=authentication&back=my-account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c6907b5-a917-4e7b-8d13-b3f7d27504c8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h3[contains(text(),'Already registered?')]",
+      "targets": [],
+      "value": "ALREADY REGISTERED?"
+    }, {
+      "id": "d45d40f6-115c-43ac-886e-6bf1b3205bdf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//label[@for='email']",
+      "targets": [],
+      "value": "Email address"
+    }, {
+      "id": "312ae8d2-b149-45f6-bdcb-d6cea678b0e4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id=\"email\"]",
+      "targets": [],
+      "value": "test@mail.com"
+    }, {
+      "id": "346670ee-ae21-4750-ac1e-dc3fdf0c4769",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//label[@for='passwd']",
+      "targets": [],
+      "value": "Password"
+    }, {
+      "id": "6e097b32-5053-4c9a-b502-5cafca300c6d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='passwd']",
+      "targets": [],
+      "value": "unvPass"
+    }, {
+      "id": "3d0ff7c0-956e-4c50-8367-f3c9082ae71a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Forgot your password?')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7ee04c6-73fd-4da4-b1d1-97a52683515f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//button[@id='SubmitLogin']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "656da90d-c9ce-4221-9af8-5c134a55e501",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='SubmitLogin']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42660967-ec15-4b67-a568-f612abea0d42",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//div[@class='alert alert-danger']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27e5e88c-3019-4569-810c-6c7a005c9f29",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//p[contains(text(),'There is 1 error')]",
+      "targets": [],
+      "value": "There is 1 error"
+    }, {
+      "id": "36d40f08-3480-453b-8bca-a52beb62fe18",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//li[contains(text(),'Authentication failed.')]",
+      "targets": [],
+      "value": "Authentication failed."
+    }, {
+      "id": "ef1a4831-e010-49d4-91f1-41c3b5f8e109",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ca716c7c-b429-4050-9472-f4802481594a",
+    "name": "zadanie6 - zapomniałem hasła",
+    "commands": [{
+      "id": "00fab269-60a4-4348-bd1c-252c7902c0dc",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php?controller=authentication&back=my-account",
+      "targets": [],
+      "value": "test@mail.com"
+    }, {
+      "id": "b431ea8b-c031-4456-8a1c-69d04d8899c7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@title='Recover your forgotten password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ea79dce-f194-4647-8be2-1364248e1ac5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h1[@class='page-subheading']",
+      "targets": [],
+      "value": "FORGOT YOUR PASSWORD?"
+    }, {
+      "id": "9396f361-dced-48f8-89c7-edd2729014b4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//p[contains(text(),'Please enter the email address you used to registe')]",
+      "targets": [],
+      "value": "Please enter the email address you used to register. We will then send you a new password."
+    }, {
+      "id": "22d7645f-1659-4837-b39f-1267cd746607",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//label[@for='email']",
+      "targets": [],
+      "value": "Email address"
+    }, {
+      "id": "302f5233-6199-4b4e-abcd-a902c1d12392",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [],
+      "value": "test@mail.com"
+    }, {
+      "id": "c794fcf2-5c71-4823-b30e-4c04baa8ed29",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//p[@class='submit']//span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b596d82-b195-4e2d-86df-e12f351eaae1",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//p[@class='alert alert-success']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f044241c-f434-431e-8a13-ce53a01ac58c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@title='Back to Login']//span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77758a25-475b-4b14-83ed-46fc51729c45",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Login - My Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a544e7ce-f748-4976-990d-e0986baf1bd1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "2bedbd91-f085-48c8-b272-ae3390d935a9",
@@ -214,8 +390,8 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["99b0a650-b472-49d8-a9e8-4520bbae742c"]
+    "tests": ["99b0a650-b472-49d8-a9e8-4520bbae742c", "2ef8ac4b-a9d3-4b21-9ac2-a9895a2a4b5c", "a4564e9b-511e-4f2c-b871-8cefa190b0ac", "ca716c7c-b429-4050-9472-f4802481594a"]
   }],
-  "urls": ["http://automationpractice.com/index.php"],
+  "urls": ["http://automationpractice.com/index.php", "http://automationpractice.com/"],
   "plugins": []
 }
