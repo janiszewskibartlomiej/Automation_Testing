@@ -2,7 +2,7 @@
   "id": "64974b65-2d74-4214-9df3-35e5b577847a",
   "version": "1.1",
   "name": "Manualne pisanie skryptu",
-  "url": "http://automationpractice.com",
+  "url": "http://demo.automationtesting.in",
   "tests": [{
     "id": "99b0a650-b472-49d8-a9e8-4520bbae742c",
     "name": "logowanie na automationpractice.com",
@@ -383,6 +383,192 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "744446fe-5f1c-4154-8b23-7ae0e61a5844",
+    "name": "zadanie7 Alert + OK",
+    "commands": [{
+      "id": "96cea16b-ed31-42cc-b49f-8b058b9652aa",
+      "comment": "",
+      "command": "open",
+      "target": "Alerts.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5da5e1fb-b73b-4d05-aef8-ab8c77e1a2c1",
+      "comment": "",
+      "command": "store",
+      "target": "Press a Button !",
+      "targets": [],
+      "value": "message"
+    }, {
+      "id": "5b6c58a7-c7d9-4477-86c5-c1faa32fe9dd",
+      "comment": "",
+      "command": "store",
+      "target": "You pressed Ok",
+      "targets": [],
+      "value": "zatwierdzenie"
+    }, {
+      "id": "c2961bba-5612-4c25-b956-f8aeaf834bfb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alert with OK & Cancel",
+      "targets": [
+        ["linkText=Alert with OK & Cancel", "linkText"],
+        ["css=li:nth-child(2) > .analystic", "css:finder"],
+        ["xpath=//a[contains(text(),'Alert with OK & Cancel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#CancelTab')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30694fa6-10ce-4920-9fee-8b1f0b6812eb",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "976823b7-2f04-422a-b768-b661782209a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button.btn.btn-primary",
+      "targets": [
+        ["css=button.btn.btn-primary", "css"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@onclick='confirmbox()']", "xpath:attributes"],
+        ["xpath=//div[@id='CancelTab']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d4dcf9-0092-4d5b-b0cf-0350d9f11e5f",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "${message}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ca29f3f-84b5-451f-ab93-be7d1db60adc",
+      "comment": "",
+      "command": "echo",
+      "target": "${message}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a05297e-7009-4fa6-953d-da4cbe945a2a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=demo",
+      "targets": [
+        ["id=demo", "id"],
+        ["css=#demo", "css"],
+        ["css=#demo", "css:finder"],
+        ["xpath=//p[@id='demo']", "xpath:attributes"],
+        ["xpath=//div[@id='CancelTab']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "${zatwierdzenie}"
+    }, {
+      "id": "86140555-8d34-4429-a433-849e619e9776",
+      "comment": "",
+      "command": "echo",
+      "target": "${zatwierdzenie}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "86c061e8-de5d-40e6-897f-2ecd7613e406",
+    "name": "zadanie7 Alert + Cancel",
+    "commands": [{
+      "id": "e6d2e6e3-6191-463b-a4ef-055c19a6d71f",
+      "comment": "",
+      "command": "open",
+      "target": "Alerts.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c4aaa3c-76f9-4fa6-a97c-f24cdf536099",
+      "comment": "",
+      "command": "store",
+      "target": "Press a Button !",
+      "targets": [],
+      "value": "message"
+    }, {
+      "id": "57b01667-6eac-4301-b7b0-56996967da55",
+      "comment": "",
+      "command": "store",
+      "target": "You Pressed Cancel",
+      "targets": [],
+      "value": "wyjscie"
+    }, {
+      "id": "b21466ac-db88-4a6e-8bbe-b6e284dd383c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alert with OK & Cancel",
+      "targets": [
+        ["linkText=Alert with OK & Cancel", "linkText"],
+        ["css=li:nth-child(2) > .analystic", "css:finder"],
+        ["xpath=//a[contains(text(),'Alert with OK & Cancel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#CancelTab')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc772ee9-d052-4902-ab4f-ae10d48475f5",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef157b54-36a1-4f3a-9e0c-ed60b54c8e15",
+      "comment": "",
+      "command": "click",
+      "target": "css=button.btn.btn-primary",
+      "targets": [
+        ["css=button.btn.btn-primary", "css"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@onclick='confirmbox()']", "xpath:attributes"],
+        ["xpath=//div[@id='CancelTab']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "550d1a3c-938f-4e55-a028-393d7b2170d2",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "${message}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4943853-55dd-41cc-8636-a796155c4dbf",
+      "comment": "",
+      "command": "echo",
+      "target": "${message}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d7a27ed-a76a-4e9d-8829-40038331c375",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=demo",
+      "targets": [
+        ["id=demo", "id"],
+        ["css=#demo", "css"],
+        ["css=#demo", "css:finder"],
+        ["xpath=//p[@id='demo']", "xpath:attributes"],
+        ["xpath=//div[@id='CancelTab']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "${wyjscie}"
+    }, {
+      "id": "387c93c5-a71a-41b2-a7c3-14aa6ebd0dbb",
+      "comment": "",
+      "command": "echo",
+      "target": "${wyjscie}",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "2bedbd91-f085-48c8-b272-ae3390d935a9",
@@ -390,8 +576,8 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["99b0a650-b472-49d8-a9e8-4520bbae742c", "2ef8ac4b-a9d3-4b21-9ac2-a9895a2a4b5c", "a4564e9b-511e-4f2c-b871-8cefa190b0ac", "ca716c7c-b429-4050-9472-f4802481594a"]
+    "tests": ["99b0a650-b472-49d8-a9e8-4520bbae742c", "2ef8ac4b-a9d3-4b21-9ac2-a9895a2a4b5c", "a4564e9b-511e-4f2c-b871-8cefa190b0ac", "ca716c7c-b429-4050-9472-f4802481594a", "86c061e8-de5d-40e6-897f-2ecd7613e406", "744446fe-5f1c-4154-8b23-7ae0e61a5844"]
   }],
-  "urls": ["http://automationpractice.com/index.php", "http://automationpractice.com/"],
+  "urls": ["http://automationpractice.com/index.php", "http://automationpractice.com/", "http://demo.automationtesting.in/"],
   "plugins": []
 }
