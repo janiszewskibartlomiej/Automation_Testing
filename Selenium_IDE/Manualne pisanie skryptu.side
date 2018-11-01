@@ -104,6 +104,13 @@
         ["xpath=//div[2]/a", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "8943e650-9aeb-4c6f-b007-3794ab633245",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "2ef8ac4b-a9d3-4b21-9ac2-a9895a2a4b5c",
@@ -205,6 +212,13 @@
         ["xpath=//div[@id='center_column']/div/ol/li", "xpath:idRelative"],
         ["xpath=//ol/li", "xpath:position"]
       ],
+      "value": ""
+    }, {
+      "id": "9fb29526-edec-4674-bf17-95c1c6d5ae90",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }, {
@@ -475,6 +489,13 @@
       "target": "${zatwierdzenie}",
       "targets": [],
       "value": ""
+    }, {
+      "id": "f6d2f3ec-7b19-4c48-b96e-0c2f701e9ca0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "86c061e8-de5d-40e6-897f-2ecd7613e406",
@@ -566,6 +587,13 @@
       "comment": "",
       "command": "echo",
       "target": "${wyjscie}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df5f7381-4b3d-4f95-83fb-1b2a998c9378",
+      "comment": "",
+      "command": "close",
+      "target": "",
       "targets": [],
       "value": ""
     }]
